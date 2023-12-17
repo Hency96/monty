@@ -2,10 +2,10 @@
 /**
  * f_pint - prints the top
  * @head: stack head
- * @counter: line_number
+ * @counter: line number
  * Return: no return
 */
-void f_pint(stack_t **head, unsigned int counter)
+void fpint(stack_t **head, unsigned int counter)
 {
 	if (*head == NULL)
 	{
