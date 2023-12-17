@@ -8,12 +8,12 @@
 void f_div(stack_t **head, unsigned int counter)
 {
 	stack_t *h;
-	int len = 0, au;
+	int len = 0, aux;
 
 	h = *head;
 	while (h)
 	{
-		h = hd->next;
+		h = h->next;
 		len++;
 	}
 	if (len < 2)
@@ -33,8 +33,8 @@ void f_div(stack_t **head, unsigned int counter)
 		free_stack(*head);
 		exit(EXIT_FAILURE);
 	}
-	au = h->next->n / h->n;
-	h->next->n = au;
+	aux = h->next->n / h->n;
+	h->next->n = aux;
 	*head = h->next;
 	free(h);
 }
