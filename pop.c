@@ -1,8 +1,8 @@
 #include "monty.h"
 /**
- * f_pop - prints the top
+ * f_pop - prints the top of the queue
  * @head: stack head
- * @counter: line_number
+ * @counter: line number
  * Return: no return
 */
 void f_pop(stack_t **head, unsigned int counter)
